@@ -1,0 +1,8 @@
+body {
+    background-image: url(boritokep.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.center {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
