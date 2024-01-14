@@ -11,43 +11,80 @@
 <body>
 
 
+
+
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+      <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Figyelmeztetés!</strong> Tájékoztatjuk, hogy tervezett karbantartás miatt 2024.01.19-én 22:00 és 22:30 óra között az oldal nem lesz elérhető. Megértés köszönjük!
+  </div>
+
   <h1 class="display-1 vertical-alignment align-text-bottom text text-center" id="center"> Üdvözöljük a <mark> Hírek.hu </mark>  oldalon!  </h1>
   <div id="one" class="col-2 d-flex align-items-center justify-content-center">1</div>
+  <div class="collapse" id="navbarToggleExternalContent">
 
-
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="bg-dark p-4">
+  
+  
+        <div class="list-group">
+            <a href="top4.html" target="_blank" class="list-group-item list-group-item-action active" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                 <h5 class="mb-1">  Top 4 óra </h5>
+                <small>3 nappal ezelőtt</small>
+              </div>
+              <p class="mb-1">Legutolsó hír ebben a kategóriában: </p>
+          
+            </a>
+            <a href="top4.html" class="list-group-item list-group-item-action bg-warning">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Top 8 óra</h5>
+                <small class="text-muted">3 nappal ezelőtt</small>
+              </div>
+              <p class="mb-1">Legutolsó hír ebben a kategóriában: </p>              
+            </a>
+            <a href="top4.html" class="list-group-item list-group-item-action bg-danger">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Top 12 óra </h5>
+                <small class="text-muted">3 nappal ezelőtt</small>
+              </div>
+              <p class="mb-1">Legutolsó hír ebben a kategóriában: </p>              
+            </a>
+          </div>  
+  
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="javascript:void(0)">Hírek.hu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        Legfrisseb Hírek
       </button>
-      <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Hírek</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="top4.html" target="_blank">Top 4 óra</a></li>
-              <li><a class="dropdown-item" href="#">Top 8 óra</a></li>
-              <li><a class="dropdown-item" href="#">Top 12 óra</a></li>
-              </ul>
-        </ul>
-        <form class="d-flex">
-          <button class="btn btn-primary" type="button">Kapcsolat</button>
-        </form>
-      </div>
+      <form class="d-flex">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Kapcsolatfelvétel</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+      </form>
     </div>
   </nav>
-  
+
+
+<hr>
+  <footer style="position: absolute; bottom: 30px;">
+    <p style="color: white;"> Készítette: Varjasi Teodor
+    </p>
+    <p> <a href="mailto:teodorvarjasi@gmail.com">  Email: teodorvarjasi@gmail.com</a></p>
+  </footer>
     
 </body>
 </html>
